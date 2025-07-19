@@ -9,6 +9,7 @@ import {
   FileText, 
   CreditCard, 
   Banknote,
+  Clock,
   Menu,
   X,
   Building2,
@@ -23,6 +24,7 @@ interface SidebarProps {
 const navigation = [
   { name: "Dashboard", href: "/", icon: LayoutDashboard },
   { name: "Employees", href: "/employees", icon: Users },
+  { name: "Attendance", href: "/attendance", icon: Clock },
   { name: "Expenses", href: "/expenses", icon: Receipt },
   { name: "Quotations", href: "/quotations", icon: FileText },
   { name: "Invoices", href: "/invoices", icon: CreditCard },

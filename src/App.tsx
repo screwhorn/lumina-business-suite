@@ -9,6 +9,7 @@ import { Layout } from "./components/layout/Layout";
 import { isAuthenticated } from "./lib/auth";
 import Dashboard from "./pages/Dashboard";
 import Employees from "./pages/Employees";
+import Attendance from "./pages/Attendance";
 import Expenses from "./pages/Expenses";
 import Quotations from "./pages/Quotations";
 import Invoices from "./pages/Invoices";
@@ -54,6 +55,7 @@ const App = () => {
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/employees" element={<Employees />} />
+              <Route path="/attendance" element={<Attendance />} />
               <Route path="/expenses" element={<Expenses />} />
               <Route path="/quotations" element={<Quotations />} />
               <Route path="/invoices" element={<Invoices />} />

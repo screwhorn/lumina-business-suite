@@ -79,6 +79,18 @@ export interface Payment {
   createdAt: string;
 }
 
+export interface Attendance {
+  id: string;
+  employeeId: string;
+  employeeName: string;
+  month: string; // Format: "YYYY-MM" (e.g., "2025-03")
+  monthDisplay: string; // Format: "March 2025"
+  daysWorked: number;
+  dailyWage: number;
+  monthlyWage: number;
+  createdAt: string;
+}
+
 // Generic storage functions
 export const getStorageData = <T>(key: string): T[] => {
   const data = localStorage.getItem(key);
@@ -116,5 +128,6 @@ export const STORAGE_KEYS = {
   EXPENSES: 'expenses',
   QUOTATIONS: 'quotations',
   INVOICES: 'invoices',
-  PAYMENTS: 'payments'
+  PAYMENTS: 'payments',
+  ATTENDANCE: 'attendance'
 } as const;
